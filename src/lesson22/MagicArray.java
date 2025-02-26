@@ -11,10 +11,9 @@ public class MagicArray {
     public MagicArray() {
         this.array = new int[10];// [0, 0, 0....]
     }
-
+// Конструктор (опционально)
     public MagicArray(int[] array) {
-        //Todo homework
-
+        // Todo homework
     }
 
     //1.Метод добавления в массив одного элемента
@@ -152,11 +151,15 @@ public class MagicArray {
 
     //10.Индекс последнего вхождения ++
     //{1, 100, 5, 100, 24, 0, 100} - lastIndexOf(100) -> 6
-    int lastIndexOf() {
-
-        //Todo homework
-        return array.length - 1;
-
+    //Todo homework
+    int lastIndexOf(int value) {
+        // Идем по массиву с конца
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (array[i] == value) {
+                return i; // Возвращаем индекс, если нашли значение
+            }
+        }
+        return -1; // Если элемент не найден, возвращаем -1
     }
 
     // 8.Удаление элемента по значению.Возвращал boolean. Если удалил - вернет true. Не нашел, что удалил - false ++
@@ -165,7 +168,6 @@ public class MagicArray {
             if (array[i] == value) {
                 //Значения совпали.Возвращаю индекс
                 return true;
-
             }
 
         }

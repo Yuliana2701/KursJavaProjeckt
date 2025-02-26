@@ -61,9 +61,10 @@ public class Les22Main {
             System.out.println("\n================");
 
 
-            System.out.println("Индекс последнего вхождения: " + magic.lastIndexOf());
+            System.out.println("magic.lastIndexOf(30) : " + magic.lastIndexOf(30));
 
             System.out.println("\n================");
+
             System.out.println(magic.removeByValue(200));
             System.out.println(magic.removeByValue(5));
             System.out.println(magic.removeByValue(20));
