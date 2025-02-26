@@ -65,6 +65,9 @@ public class Les22Main {
 
             System.out.println("\n================");
             System.out.println(magic.removeByValue(200));
+            System.out.println(magic.removeByValue(5));
+            System.out.println(magic.removeByValue(20));
+            System.out.println(magic.removeByValue(1000));
 
 
         }
