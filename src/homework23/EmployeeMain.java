@@ -2,7 +2,7 @@ package homework23;
 
 public class EmployeeMain {
     public static void main(String[] args){
-        Employee employee = new Employee("Max", 28, 12);
+        Employee employee = new Employee("Max", 28, 12.45);
         System.out.println(employee.info());
 
         int employeeAge = employee.getAge();

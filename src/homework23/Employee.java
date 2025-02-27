@@ -3,16 +3,16 @@ package homework23;
 public class Employee {
     private String name;
     private int age;
-    private int salary;
+    private double salary;
 
-    public Employee(String name, int age, int salary) {
+    public Employee(String name, int age, double salary) {
         this.name = name;
         this.age = age;
         this.salary = salary;
     }
 
     public String info() {
-        String result = String.format("Employee: %s, age: %d, salary: %d$ v chas\n", name, age, salary);
+        String result = String.format("Employee: %s, age: %d, salary: %.2f$ v chas\n", name, age, salary);
         return result;
     }
 
@@ -24,7 +24,7 @@ public class Employee {
         return name;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
