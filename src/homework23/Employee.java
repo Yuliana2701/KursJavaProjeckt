@@ -4,11 +4,14 @@ public class Employee {
     private String name;
     private int age;
     private double salary;
+    private int hourWorked;
 
-    public Employee(String name, int age, double salary) {
+
+    public Employee(String name, int age, double salary, int hourWorked) {
         this.name = name;
         this.age = age;
         this.salary = salary;
+        this.hourWorked = hourWorked;
     }
 
     public String info() {
@@ -28,6 +31,11 @@ public class Employee {
         return salary;
     }
 
+    public int getHourWorked(){
+        return hourWorked;
+    }
+
+
     public void setAge(int age) {
         if (age < 18) {
             System.out.println("Сотрудник должен быть совершеннолетний! ");
@@ -41,8 +49,21 @@ public class Employee {
         this.age = age;
 
     }
+    public void setSalary(int hourWorked){
+        this.hourWorked = hourWorked;
+        if (hourWorked == 8){
+            salary = (salary + 0.50) * hourWorked;
 
+        }else {
+            salary  = salary * hourWorked;
+        }
+    }
 }
+
+
+
+
+
 
 
 
