@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 
 public class MagicArrayEncaps {
-    int[] array;
-    int cursor; // по умолчанию = 0
+  private int[] array;
+   private int cursor; // по умолчанию = 0
 
     // Методы, расширяющие функционал массива
 
