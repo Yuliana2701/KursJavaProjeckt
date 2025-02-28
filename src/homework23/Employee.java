@@ -6,7 +6,7 @@ public class Employee {
     private double salary;
     private int hourWorked;
 
-
+// сделали конструктор
     public Employee(String name, int age, double salary, int hourWorked) {
         this.name = name;
         this.age = age;
