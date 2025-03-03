@@ -1,41 +1,38 @@
-package homework24;
-
-import lesson25.ConstantDemo;
+package homework25;
 
 public class Calculator {
 
+        public static int summaMethod(int x, int y) {
+            return x + y;
+        }
 
-    public static int summaMethod(int x, int y) {
-        return x + y;
-    }
+        public static int subtractionMethod(int x, int y) {
+            return x - y;
+        }
 
-    public static int subtractionMethod(int x, int y) {
-        return x - y;
-    }
+        public static int multiplicationMethod(int x, int y) {
+            return x * y;
+        }
 
-    public static int multiplicationMethod(int x, int y) {
-        return x * y;
-    }
+        public static int divisionMethod(int x, int y) {
+            return x / y;
+        }
 
-    public static int divisionMethod(int x, int y) {
-        return x / y;
-    }
-
-    public static boolean booleanMethod(int x, int y) {
-        return !(x == 0 && y == 0);
+        public static boolean booleanMethod(int x, int y) {
+            return !(x == 0 && y == 0);
 
 
-    }
+        }
 
-    public static double radiusMethod(double radius) {
-        return 2 * Math.PI * radius;
-    }
+        public static double radiusMethod(double radius) {
+            return 2 * Math.PI * radius;
+        }
 
-    public static double areaMethod(double radius) {
-        return Math.PI * Math.pow(radius, 2);
-    }
+        public static double areaMethod(double radius) {
+            return Math.PI * Math.pow(radius, 2);
+        }
 
-    public static final double constantPi = 3.14;
+        public static final double constantPi = 3.14;
 
 
 
@@ -71,3 +68,5 @@ public class Calculator {
 
 
     }
+
+
