@@ -2,6 +2,18 @@ package homework25;
 
 public class Calculator {
 
+    /*
+    1.Пола класса,в том числе константы
+    2.Блоки инициализации,если они есть
+    3.Конструктор/ры если они есть
+    4.Методы(статические и не статические обычно не разделяются)
+     */
+
+   private static int x ;
+   private static int y ;
+   private static double radius;
+    public static final double constantPi = 3.14;
+
         public static int summaMethod(int x, int y) {
             return x + y;
         }
@@ -25,14 +37,16 @@ public class Calculator {
         }
 
         public static double radiusMethod(double radius) {
-            return 2 * Math.PI * radius;
+            //2 * PI * radius
+            return 2 * constantPi * radius;
         }
 
         public static double areaMethod(double radius) {
-            return Math.PI * Math.pow(radius, 2);
+            // PI * radius ^ 2
+            return constantPi * radius * radius;
         }
 
-        public static final double constantPi = 3.14;
+
 
 
 
