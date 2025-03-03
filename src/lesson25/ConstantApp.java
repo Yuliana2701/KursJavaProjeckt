@@ -12,7 +12,7 @@ public class ConstantApp {
 
         StringBuilder sb = new StringBuilder();
 
-        //TODO показать на следующем уроке
+
 
 
     }
