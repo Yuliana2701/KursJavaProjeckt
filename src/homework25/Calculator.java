@@ -7,13 +7,11 @@ public class Calculator {
     public static final double constantPi = 3.14;
 
     /*
-    1.Пола класса,в том числе константы
+    1.Поля класса,в том числе константы
     2.Блоки инициализации,если они есть
     3.Конструктор/ры если они есть
     4.Методы(статические и не статические обычно не разделяются)
      */
-
-
 
         public static int summaMethod(int x, int y) {
             return x + y;
@@ -37,27 +35,15 @@ public class Calculator {
         }
 
         public static double radiusMethod(double radius) {
-<<<<<<< HEAD
             //2 * PI * radius
-=======
->>>>>>> be34d822ac370eac52896c0900801e36ea845269
             return 2 * constantPi * radius;
         }
 
         public static double areaMethod(double radius) {
-<<<<<<< HEAD
+
             // PI * radius ^ 2
             return constantPi * radius * radius;
         }
-
-=======
-
-
-
-
-
-
->>>>>>> be34d822ac370eac52896c0900801e36ea845269
 
         public static void main (String[] args){
             int x = 10;
