@@ -1,6 +1,10 @@
 package homework25;
 
 public class Calculator {
+   private static int x ;
+   private static int y ;
+   private static double radius;
+    public static final double constantPi = 3.14;
 
     /*
     1.Пола класса,в том числе константы
@@ -9,10 +13,7 @@ public class Calculator {
     4.Методы(статические и не статические обычно не разделяются)
      */
 
-   private static int x ;
-   private static int y ;
-   private static double radius;
-    public static final double constantPi = 3.14;
+
 
         public static int summaMethod(int x, int y) {
             return x + y;
@@ -36,15 +37,27 @@ public class Calculator {
         }
 
         public static double radiusMethod(double radius) {
+<<<<<<< HEAD
             //2 * PI * radius
+=======
+>>>>>>> be34d822ac370eac52896c0900801e36ea845269
             return 2 * constantPi * radius;
         }
 
         public static double areaMethod(double radius) {
+<<<<<<< HEAD
             // PI * radius ^ 2
             return constantPi * radius * radius;
         }
 
+=======
+
+
+
+
+
+
+>>>>>>> be34d822ac370eac52896c0900801e36ea845269
 
         public static void main (String[] args){
             int x = 10;
