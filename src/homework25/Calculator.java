@@ -33,7 +33,6 @@ public class Calculator {
         public static boolean booleanMethod(int x, int y) {
             return !(x == 0 && y == 0);
 
-
         }
 
         public static double radiusMethod(double radius) {
@@ -45,11 +44,6 @@ public class Calculator {
             // PI * radius ^ 2
             return constantPi * radius * radius;
         }
-
-
-
-
-
 
 
         public static void main (String[] args){
