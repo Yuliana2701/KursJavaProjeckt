@@ -1,11 +1,11 @@
-package homework26;
+package homework26.animals;
 
-public class Cat extends Animal {
+public class Dog extends Animal {
     private int weight;
-
-    public Cat(String name, int age, String breed, int weight) {
+    public Dog(String name, int age, String breed, int weight) {
         super(name, age, breed);
         this.weight = weight;
+
     }
 
     public int getWeight() {
@@ -15,7 +15,6 @@ public class Cat extends Animal {
     public void setWeight(int weight) {
         this.weight = weight;
     }
-
     public String toString() {
         return "Животное: " + getName() + "Возраст: " + getAge() + " лет " + "порода: " + getBreed() + " вес " + getWeight() + " kg";
     }

@@ -1,6 +1,6 @@
-package homework26;
+package homework26.schapes;
 
-public class Circle  extends Shape{
+public class Circle  extends Shape {
     private double radius;
     public static final double constantPi = 3.14;
 

@@ -1,6 +1,6 @@
-package homework26;
+package homework26.schapes;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private double width;
     private double height;
 

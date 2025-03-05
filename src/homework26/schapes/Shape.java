@@ -1,4 +1,4 @@
-package homework26;
+package homework26.schapes;
 
 public class Shape {
     protected String name;
