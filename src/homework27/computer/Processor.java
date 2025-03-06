@@ -1,6 +1,6 @@
-package homework27;
+package homework27.computer;
 
-public class Processor extends Component{
+public class Processor extends Component {
         private double speed;
         private Computer computer;
 

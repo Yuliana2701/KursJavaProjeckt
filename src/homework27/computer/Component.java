@@ -1,4 +1,4 @@
-package homework27;
+package homework27.computer;
 /*
 Task 2
 Компьютер и компоненты

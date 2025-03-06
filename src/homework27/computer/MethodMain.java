@@ -1,4 +1,4 @@
-package homework27;
+package homework27.computer;
 
 public class MethodMain {
     public static void main(String[] args) {

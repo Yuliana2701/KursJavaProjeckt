@@ -1,6 +1,7 @@
-package homework27;
+package homework27.computer;
 
 public class Computer {
+
     private Processor processor;
     private Memory memory;
     private Storage storage;

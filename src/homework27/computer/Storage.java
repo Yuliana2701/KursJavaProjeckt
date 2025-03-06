@@ -1,6 +1,6 @@
-package homework27;
+package homework27.computer;
 
-public class Storage extends Component{
+public class Storage extends Component {
     private int capacity;
 
     public Storage(String brand, String model, int capacity) {

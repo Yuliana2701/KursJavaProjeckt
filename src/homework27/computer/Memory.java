@@ -1,6 +1,6 @@
-package homework27;
+package homework27.computer;
 
-public class Memory extends Component{
+public class Memory extends Component {
     private int size;
     private Computer computer;
 
@@ -9,7 +9,7 @@ public class Memory extends Component{
         this.size = size;
     }
 
-    public void attachToComputer(Computer computer) {
+      public void attachToComputer(Computer computer) {
         if (computer != null) {
             this.computer = computer;
         } else {
