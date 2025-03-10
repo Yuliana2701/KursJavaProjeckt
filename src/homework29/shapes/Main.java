@@ -1,4 +1,4 @@
-package homework29;
+package homework29.shapes;
 
 public class Main {
     public static void main(String[] args) {

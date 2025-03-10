@@ -1,4 +1,4 @@
-package homework29;
+package homework29.shapes;
 
 public class Rectangle extends Shape {
     private double width;

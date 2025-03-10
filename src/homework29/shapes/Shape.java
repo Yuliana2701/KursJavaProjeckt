@@ -1,4 +1,4 @@
-package homework29;
+package homework29.shapes;
 /*
 Task 1
 Создайте абстрактный класс Shape с абстрактными методами для вычисления площади и периметра.+

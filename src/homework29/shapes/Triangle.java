@@ -1,4 +1,5 @@
-package homework29;
+package homework29.shapes;
+
 public class Triangle extends Shape {
     private double base;
     private double height;

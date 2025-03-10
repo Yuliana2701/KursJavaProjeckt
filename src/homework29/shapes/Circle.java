@@ -1,4 +1,5 @@
-package homework29;
+package homework29.shapes;
+
 public class Circle extends Shape {
     private double radius;
     private final double PI = 3.14;
