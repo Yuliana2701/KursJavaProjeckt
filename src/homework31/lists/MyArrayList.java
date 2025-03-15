@@ -3,6 +3,7 @@ package homework31.lists;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Objects;
 
 public class MyArrayList<T>  implements MyList<T> {
@@ -13,7 +14,7 @@ public class MyArrayList<T>  implements MyList<T> {
     @SuppressWarnings("unchecked")
     public MyArrayList() {
         //Стирание типов.Невозможно создать обьект типа Т
-        this.array =(T[]) new Object[10]; // [0, 0...0]
+        this.array =(T[]) new Object[10];
     }
     @SuppressWarnings("unchecked")
     public MyArrayList(T[] array) {
@@ -252,8 +253,33 @@ public class MyArrayList<T>  implements MyList<T> {
         }
         return result;
     }
+//Невозможно вернуть обьект типа интерфейс.
+// Если тип возвращаемого значения(или параметр метода) имеет тип "Интерфейс",
+    // это значит, что я должен вернуть обьект класса,который имплементировал этот интерфейс.
+    @Override
+    public Iterator<T> iterator() {
+        return new MyIterator();
+    }
 
-        public void test () {
+    private class MyIterator implements Iterator<T>{
+
+        int currentIndex = 0;
+
+        @Override
+        public boolean hasNext() {
+            return currentIndex < cursor;
+        }
+
+        @Override
+        public T next() {
+            //return array[currentIndex++]-можно и так написать этот метод
+            T value = array[currentIndex];
+            currentIndex++;
+            return value;
+        }
+    }// End class MyIterator
+
+    public void test () {
             System.out.println(Arrays.toString(array));
         }
 

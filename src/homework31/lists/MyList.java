@@ -1,7 +1,7 @@
 package homework31.lists;
 
 
-    public interface MyList<T> {
+    public interface MyList<T> extends Iterable<T> {
 
 
         /**

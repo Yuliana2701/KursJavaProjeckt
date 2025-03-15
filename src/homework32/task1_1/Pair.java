@@ -1,4 +1,4 @@
-package homework32.task1;
+package homework32.task1_1;
 /*
 Task 1
 Создайте обобщенный класс Pair, который хранит две переменные одного типа.
@@ -14,41 +14,49 @@ void setSecond(T value) — устанавливает значение втор
 void swap() — меняет местами первый и второй элементы.+
  */
 
+public class Pair <E>{
+    private E first;
+    private E second;
 
-
-public class Pair<T> {
-    private T first;
-    private T second;
-
-    //Конструктор
-    public Pair(T first, T second) {
+    public Pair(E first, E second) {
         this.first = first;
         this.second = second;
     }
-    //T getFirst() — возвращает первый элемент.
-    public T getFirst() {
+
+    public E getFirst() {
         return first;
     }
-    //T getSecond() — возвращает второй элемент.
-    public T getSecond() {
+
+    public void setFirst(E first) {
+        this.first = first;
+    }
+
+    public E getSecond() {
         return second;
     }
 
-    // void setFirst(T value) — устанавливает значение первого элемента.
-    public void setFirst(T value) {
-        this.first = value;
+    public void setSecond(E second) {
+        this.second = second;
     }
+     public void swap(){
 
-    // void setSecond(T value) — устанавливает значение второго элемента.
-    public void setSecond(T value) {
-        this.second = value;
-    }
-
-    // void swap() — меняет местами первый и второй элементы.
-    public void swap() {
-        T temp = first;
+        E temp = first;
         first = second;
         second = temp;
     }
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
     }
 
+    public static void main(String[] args) {
+        Pair<String> pair = new Pair<>("Hello", "Java");
+
+        pair.swap();
+        System.out.println(pair);
+    }
+
+}
