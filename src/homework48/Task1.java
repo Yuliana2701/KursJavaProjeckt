@@ -5,6 +5,7 @@ Task 1
 отсортируйте эти значения по значению последней цифры в числе и выведите результат на экране
  */
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,7 +15,7 @@ public class Task1 {
 
         List<Integer>list = integers.stream()
                 .filter(integer -> integer > 10)
-                .sorted()
+                .sorted(Comparator.comparing(i-> i %10))
                 .collect(Collectors.toList());
 
         System.out.println("list: " + list);
